@@ -1,0 +1,81 @@
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin-left:25%;
+}
+.input-point{
+  padding:2px;
+}
+.game {
+  position: relative;
+  width: 700px;
+  height: 450px;
+  border: 1px solid #000;
+  margin-top:10px;
+}
+p{
+  display:inline-block;
+}
+h3{
+  margin-bottom: 10px;
+}
+p{
+  margin-bottom: 10px;
+}
+.point{
+  margin-right:100px;
+}
+.time{
+  margin-left:105px;
+}
+.circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  background-color: white;
+  border:1px solid #000;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #333;
+}
+.btn{
+  padding:2px;
+  width:100px;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    background-color: white;
+  }
+  50% {
+    background-color: red;
+  }
+  100% {
+    opacity: 0;
+    background-color: red;
+  }
+}
+
+.item {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 1s ease-out;
+}
+
+.fade-out {
+  animation: fadeOut 2s forwards;
+}
